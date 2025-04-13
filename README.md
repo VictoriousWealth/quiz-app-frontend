@@ -198,7 +198,7 @@ You can add tests using React Testing Library or Cypress.
 
 - [Overview](./docs/architecture/overview.md): High-level description of system components.
 - [Data Flow](./docs/architecture/data_flow.md): Describes how data moves from upload to evaluation.
-- [API Design](../docs/architecture/api_design.md): RESTful endpoints powering the system.
+- [API Design](./docs/architecture/api_design.md): RESTful endpoints powering the system.
 - [General System Diagram (PDF)](./docs/diagrams/general_system_flow.pdf): Visual architecture representation.
 - [User Stories](./docs/user_stories/20250409_143339_user_story.txt): Features from a user perspective.
 - [System Architecture](./docs/README_architecture.md): Direct access to all technical documentation related to the system design, architecture, and data flow of the **AI-Powered Quiz Web App**.
