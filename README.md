@@ -60,7 +60,14 @@ Access the app at: http://localhost:3000
 Authorization: Bearer <token>
 ```
 
---- 
+---
+
+## 🌍 Live App
+
+You can try the frontend live on Heroku here:
+👉 https://quiz-frontend-nick-b973ee3e10ba.herokuapp.com
+
+---
 
 ## 🧠 Pages & Routing
 
