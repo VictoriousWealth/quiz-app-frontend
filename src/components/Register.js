@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import API from '../api/api';
 
 function Register({ darkMode }) {
   const [email, setEmail] = useState('');
@@ -10,29 +11,29 @@ function Register({ darkMode }) {
 
   const handleRegister = async (e) => {
     e.preventDefault();
-
+  
     try {
-      const res = await fetch("http://localhost:8000/auth/signup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email,
-          full_name: fullName,
-          password
-        })
+      const response = await API.post("/auth/signup", {
+        email,
+        full_name: fullName,
+        password
       });
-
-      if (res.ok) {
+  
+      if (response.status === 200 || response.status === 201) {
         navigate("/login");
       } else {
-        const data = await res.json();
-        setError(data.detail || "Registration failed");
+        setError(response.data.detail || "Registration failed");
       }
     } catch (err) {
-      console.error(err);
-      setError("Something went wrong. Please try again.");
+      console.error("Signup error:", err);
+      if (err.response && err.response.data?.detail) {
+        setError(err.response.data.detail);
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
     }
   };
+  
 
   return (
     <div className={`card ${darkMode ? "bg-secondary text-light" : "bg-white text-dark"} mx-auto`} style={{ maxWidth: '400px' }}>

@@ -9,6 +9,10 @@ import Login from './components/Login';
 import { jwtDecode } from "jwt-decode";
 import Dashboard from './components/Dashboard';
 import Register from './components/Register'; // at the top
+import { getToken, isTokenExpired, logout } from './utils/authUtils';
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import SessionWatcher from './components/SessionWatcher';
 
 function isTokenValid() {
   const token = localStorage.getItem("token");
@@ -35,6 +39,7 @@ function App() {
       <div className={darkMode ? "bg-dark text-light min-vh-100" : "bg-light text-dark min-vh-100"}>
         <AppNavbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <div className="container pt-4">
+          <SessionWatcher />
           <Routes>
             <Route path="/" element={<PrivateRoute><Dashboard darkMode={darkMode} /></PrivateRoute>} />
             <Route path="/quiz" element={<PrivateRoute><QuizPage darkMode={darkMode} /></PrivateRoute>} />

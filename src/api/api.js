@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:8000', // your FastAPI base URL
+  baseURL: 'https://quiz-backend-nick-4b3aa7c613b0.herokuapp.com/', // your FastAPI base URL
 });
 
 export default API;

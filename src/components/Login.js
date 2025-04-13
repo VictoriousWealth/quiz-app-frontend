@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import API from '../api/api';
 
 function Login({ darkMode }) {
   const [email, setEmail] = useState('');
@@ -14,22 +15,22 @@ function Login({ darkMode }) {
     formData.append('username', email); 
     formData.append('password', password);
   
-    const response = await fetch("http://localhost:8000/auth/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
-      body: formData
-    });
+    try {
+      const response = await API.post("/auth/login", formData, {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        }
+      });
   
-    if (response.ok) {
-      const data = await response.json();
+      const data = response.data;
       localStorage.setItem("token", data.access_token);
       navigate("/");
-    } else {
+    } catch (err) {
+      console.error("Login failed", err);
       setError("Invalid email or password.");
     }
   };
+
   
   const handleLogout = () => {
     localStorage.removeItem("access_token");
