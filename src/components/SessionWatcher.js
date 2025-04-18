@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { decodeToken } from '../utils/authUtils';
 import { Toast, ToastContainer } from 'react-bootstrap';
@@ -6,10 +6,11 @@ import { Toast, ToastContainer } from 'react-bootstrap';
 const SessionWatcher = () => {
   const navigate = useNavigate();
   const [showToast, setShowToast] = useState(false);
-  const logout = () => {
+
+  const logout = useCallback(() => {
     localStorage.removeItem('token');
     navigate('/login');
-  };
+  }, [navigate]);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -21,29 +22,21 @@ const SessionWatcher = () => {
     const expiryTime = decoded.exp * 1000;
     const now = Date.now();
     const timeUntilExpiry = expiryTime - now;
-    const toastOffset = 10*1000; 
+    const toastOffset = 10 * 1000;
 
     if (timeUntilExpiry <= 0) {
       logout();
       return;
     }
 
-    // Show toast 5s before expiry
-    const toastTimer = setTimeout(() => {
-      setShowToast(true);
-    }, timeUntilExpiry - toastOffset);
-
-    // Logout at exact expiry
-    const logoutTimer = setTimeout(() => {
-      logout();
-    }, timeUntilExpiry);
+    const toastTimer = setTimeout(() => setShowToast(true), timeUntilExpiry - toastOffset);
+    const logoutTimer = setTimeout(() => logout(), timeUntilExpiry);
 
     return () => {
       clearTimeout(toastTimer);
       clearTimeout(logoutTimer);
     };
   }, [logout]);
-
 
   return (
     <ToastContainer position="top-center" className="p-3">
