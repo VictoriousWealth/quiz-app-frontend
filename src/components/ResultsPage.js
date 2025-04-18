@@ -10,19 +10,14 @@ const ResultsPage = ({ darkMode }) => {
   const totalQuestions = results.length;
   const correctAnswers = results.filter(q => q.is_correct).length;
   const scorePercent = (correctAnswers / totalQuestions) * 100;
-  let badgeBg = '';
-  let badgeText = '';
 
-  if (scorePercent >= 70) {
-    badgeBg = 'success';  // green
-    badgeText = 'light';
-  } else if (scorePercent >= 40) {
-    badgeBg = 'warning';  // yellow
-    badgeText = 'dark';
-  } else {
-    badgeBg = 'danger';   // red
-    badgeText = 'light';
-  }
+  const getBadgeStyle = (scorePercent) => {
+    if (scorePercent >= 70) return { bg: 'success', text: 'light' };
+    if (scorePercent >= 40) return { bg: 'warning', text: 'dark' };
+    return { bg: 'danger', text: 'light' };
+  };
+  
+  const { bg: badgeBg, text: badgeText } = getBadgeStyle(scorePercent);  
 
 
   if (!results.length) {
