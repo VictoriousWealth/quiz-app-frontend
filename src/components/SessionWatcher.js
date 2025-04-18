@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { isTokenExpired, decodeToken } from '../utils/authUtils';
+import { decodeToken } from '../utils/authUtils';
 import { Toast, ToastContainer } from 'react-bootstrap';
 
 const SessionWatcher = () => {
   const navigate = useNavigate();
   const [showToast, setShowToast] = useState(false);
+  const logout = () => {
+    localStorage.removeItem('token');
+    navigate('/login');
+  };
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -40,10 +44,6 @@ const SessionWatcher = () => {
     };
   }, [logout]);
 
-  const logout = () => {
-    localStorage.removeItem('token');
-    navigate('/login');
-  };
 
   return (
     <ToastContainer position="top-center" className="p-3">
