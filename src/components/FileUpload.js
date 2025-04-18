@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button, Form, Card, Toast, ToastContainer } from 'react-bootstrap';
 import API from '../api/api';
 import { useNavigate } from 'react-router-dom';
-import Loader from './Loader';
 import confetti from 'canvas-confetti';
 import '../App.css';
 
