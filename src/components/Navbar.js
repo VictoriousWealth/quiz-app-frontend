@@ -20,6 +20,8 @@ const AppNavbar = ({ darkMode, setDarkMode }) => {
     navigate("/signup");
   };
 
+  const isLoggedIn = localStorage.getItem("token");
+
   
   return (
     <Navbar bg={darkMode ? "dark" : "light"} variant={darkMode ? "dark" : "light"} expand="lg">
@@ -41,7 +43,7 @@ const AppNavbar = ({ darkMode, setDarkMode }) => {
             label="🌙"
             className="text-nowrap"
           />
-          {localStorage.getItem("token") && (
+          {isLoggedIn ? (
             <Button 
               variant={darkMode ? "outline-light" : "outline-primary"} 
               className="ms-4"
@@ -49,8 +51,7 @@ const AppNavbar = ({ darkMode, setDarkMode }) => {
             >
               Logout
             </Button>
-          )}
-          {!localStorage.getItem("token") && (
+          ) : (
             <>
               <Button 
                 variant={darkMode ? "outline-light" : "outline-primary"} 
