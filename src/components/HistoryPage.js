@@ -81,7 +81,7 @@ const HistoryPage = ({ darkMode }) => {
         className={darkMode ? "dark-modal" : ""}
       >
         <Modal.Header closeButton className={darkMode ? "bg-dark text-light" : ""}>
-          <Modal.Title>Attempts for Quiz</Modal.Title>
+          <Modal.Title>Attempts for Quiz {selectedQuizId}</Modal.Title>
         </Modal.Header>
         <Modal.Body className={darkMode ? "bg-dark text-light" : ""}>
           {attempts.length === 0 ? (
