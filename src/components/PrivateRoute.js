@@ -1,5 +1,5 @@
 import { Navigate } from "react-router-dom";
-import { isTokenExpired } from "../utils/authUtils";
+import { isTokenExpired, getToken } from "../utils/authUtils"; 
 
 const PrivateRoute = ({ children }) => {
   const token = getToken();
