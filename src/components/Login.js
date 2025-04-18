@@ -31,12 +31,6 @@ function Login({ darkMode }) {
     }
   };
 
-  
-  const handleLogout = () => {
-    localStorage.removeItem("access_token");
-    navigate("/login");
-  };
-  
 
   return (
     <div className={`card ${darkMode ? "bg-secondary text-light" : "bg-white text-dark"} mx-auto`} style={{ maxWidth: '400px' }}>
