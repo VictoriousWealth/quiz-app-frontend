@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { Card, Table, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import API from '../api/api';
-import Loader from './Loader';
 import confetti from 'canvas-confetti';
 import { Toast, ToastContainer } from 'react-bootstrap';
 
@@ -89,7 +88,7 @@ const Dashboard = ({ darkMode }) => {
       
       <div className="mt-4">
         <h2>Uploaded Files</h2>
-        {(files.length == 0) && (<p>No Files Have Been Saved.</p>)}
+        {(files.length === 0) && (<p>No Files Have Been Saved.</p>)}
         <div className="d-flex flex-wrap gap-3">
           {files.map(file => (
             <Card
