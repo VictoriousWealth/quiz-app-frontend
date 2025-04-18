@@ -8,10 +8,7 @@ import AppNavbar from './components/Navbar';
 import Login from './components/Login';
 import { jwtDecode } from "jwt-decode";
 import Dashboard from './components/Dashboard';
-import Register from './components/Register'; // at the top
-import { getToken, isTokenExpired, logout } from './utils/authUtils';
-import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import Register from './components/Register'; 
 import SessionWatcher from './components/SessionWatcher';
 
 function isTokenValid() {

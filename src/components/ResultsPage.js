@@ -6,7 +6,6 @@ const ResultsPage = ({ darkMode }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const results = location.state?.results || [];
-  const userAnswers = location.state?.userAnswers || {};
   const totalQuestions = results.length;
   const correctAnswers = results.filter(q => q.is_correct).length;
   const scorePercent = (correctAnswers / totalQuestions) * 100;

@@ -38,7 +38,7 @@ const SessionWatcher = () => {
       clearTimeout(toastTimer);
       clearTimeout(logoutTimer);
     };
-  }, []);
+  }, [logout]);
 
   const logout = () => {
     localStorage.removeItem('token');
