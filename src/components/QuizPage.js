@@ -23,10 +23,15 @@ const QuizPage = ({ darkMode }) => {
 
     try {
       const token = localStorage.getItem("token");
+      
+      const completeAnswers = {};
+      quiz.questions.forEach(q => {
+        completeAnswers[q.id] = answers[q.id] || null;
+      });
 
       const res = await API.post("/answers/", {
         quizData: quiz,
-        userAnswers: answers
+        userAnswers: completeAnswers
       }, {
         headers: {
           Authorization: `Bearer ${token}`,

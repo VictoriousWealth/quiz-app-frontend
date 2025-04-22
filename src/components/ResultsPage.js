@@ -19,7 +19,7 @@ const ResultsPage = ({ darkMode }) => {
   const { bg: badgeBg, text: badgeText } = getBadgeStyle(scorePercent);  
 
 
-  if (!results.length) {
+  if (!Array.isArray(results) || !results.some(q => q.question)) {
     return (
       <div className="text-center mt-5">
         <h4>No results found.</h4>
@@ -82,31 +82,44 @@ const ResultsPage = ({ darkMode }) => {
           </Card.Text>
         </Card>
       ))}
-
-      <div className="text-center d-flex flex-row justify-content-center ">
+      
+      <div className="d-flex flex-wrap flex-md-row flex-column justify-content-center align-items-center gap-3 mt-3 mb-3">
         <Button
-          variant={darkMode ? 'outline-light' : 'success'}
-          onClick={() => navigate('/upload')}
-        >
-          Try Another File
-        </Button>
-        <Button
-          variant={darkMode ? 'outline-light' : 'success'}
+          className='fs-6'
+          variant={darkMode ? 'outline-light' : 'warning'}
           onClick={() =>
             navigate('/quiz', {
               state: {
-                quizData: location.state?.quizData
+                quizData: location.state?.quizData,
               }
             })
           }
         >
           Take this Quiz Again 
         </Button>
+        
         <Button
-          variant={darkMode ? 'outline-light' : 'success'}
+          className='fs-6'
+          variant={darkMode ? 'outline-light' : 'primary'}
           onClick={() => navigate('/')}
         >
           Go back to dashboard
+        </Button>
+        
+        <Button
+          className='fs-6'
+          variant={darkMode ? 'outline-light' : 'success'}
+          onClick={() => navigate('/history')}
+        >
+          Go back to history
+        </Button>
+
+        <Button
+          className='fs-6'
+          variant={darkMode ? 'outline-light' : 'secondary'}
+          onClick={() => navigate('/upload')}
+        >
+          Try Another File
         </Button>
       </div>
     </div>
