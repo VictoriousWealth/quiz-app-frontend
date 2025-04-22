@@ -83,7 +83,7 @@ const ResultsPage = ({ darkMode }) => {
         </Card>
       ))}
 
-      <div className="text-center">
+      <div className="text-center d-flex flex-row justify-content-center ">
         <Button
           variant={darkMode ? 'outline-light' : 'success'}
           onClick={() => navigate('/upload')}
@@ -95,7 +95,7 @@ const ResultsPage = ({ darkMode }) => {
           onClick={() =>
             navigate('/quiz', {
               state: {
-                quizData: location.state?.quizData // <-- forward original quiz data
+                quizData: location.state?.quizData
               }
             })
           }
