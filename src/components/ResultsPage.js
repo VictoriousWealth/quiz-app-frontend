@@ -92,7 +92,13 @@ const ResultsPage = ({ darkMode }) => {
         </Button>
         <Button
           variant={darkMode ? 'outline-light' : 'success'}
-          onClick={() => navigate('/quiz')}
+          onClick={() =>
+            navigate('/quiz', {
+              state: {
+                quizData: location.state?.quizData // <-- forward original quiz data
+              }
+            })
+          }
         >
           Take this Quiz Again 
         </Button>

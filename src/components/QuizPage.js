@@ -38,6 +38,7 @@ const QuizPage = ({ darkMode }) => {
       navigate("/results", {
         state: {
           quizId: quiz.quiz_id,
+          quizData: quiz,
           userAnswers: answers,
           results: evaluation.results
         }
