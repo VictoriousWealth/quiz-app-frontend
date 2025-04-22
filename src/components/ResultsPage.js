@@ -90,6 +90,18 @@ const ResultsPage = ({ darkMode }) => {
         >
           Try Another File
         </Button>
+        <Button
+          variant={darkMode ? 'outline-light' : 'success'}
+          onClick={() => navigate('/quiz')}
+        >
+          Take this Quiz Again 
+        </Button>
+        <Button
+          variant={darkMode ? 'outline-light' : 'success'}
+          onClick={() => navigate('/')}
+        >
+          Go back to dashboard
+        </Button>
       </div>
     </div>
   );
