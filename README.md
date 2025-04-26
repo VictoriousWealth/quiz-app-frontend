@@ -2,7 +2,7 @@
 
 This is the **React.js frontend** for the AI-powered quiz generation app. Users can sign up, upload documents, generate quizzes using AI, and review quiz results – all in a clean, responsive, and dark/light mode interface.
 
-> 🖥️ The frontend for this project is built with React.js. Check it out here: [quiz-app-frontend](https://github.com/VictoriousWealth/quiz-app-frontend)
+> 🚀 This project is powered by a FastAPI backend. Check it out here: [quiz-app-backend](https://github.com/VictoriousWealth/quiz-app-backend)
 
 ---
 
