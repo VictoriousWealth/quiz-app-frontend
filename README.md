@@ -132,12 +132,12 @@ Here are some visual highlights of the app in both light and dark modes:
 ### 📂 Upload File & Generate Quiz
 <table>
   <tr>
-    <td><img src="../docs/screenshots/upload_light_empty.png" alt="Upload Light with no file chosen" width="250"/></td>
-    <td><img src="../docs/screenshots/upload_light_filled.png" alt="Upload Light with file chosen" width="250"/></td>
-    <td><img src="../docs/screenshots/upload_dark_empty.png" alt="Upload Dark with no file chosen" width="250"/></td>
-    <td><img src="../docs/screenshots/upload_dark_filled.png" alt="Upload Dark with file chosen" width="250"/></td>
-    <td><img src="../docs/screenshots/upload_dark_loading.png" alt="Upload Dark now uploading file" width="250"/></td>
-    <td><img src="../docs/screenshots/upload_dark_success.png" alt="Upload Dark now generating quiz" width="250"/></td>
+    <td><img src="./docs/screenshots/upload_light_empty.png" alt="Upload Light with no file chosen" width="250"/></td>
+    <td><img src="./docs/screenshots/upload_light_filled.png" alt="Upload Light with file chosen" width="250"/></td>
+    <td><img src="./docs/screenshots/upload_dark_empty.png" alt="Upload Dark with no file chosen" width="250"/></td>
+    <td><img src="./docs/screenshots/upload_dark_filled.png" alt="Upload Dark with file chosen" width="250"/></td>
+    <td><img src="./docs/screenshots/upload_dark_loading.png" alt="Upload Dark now uploading file" width="250"/></td>
+    <td><img src="./docs/screenshots/upload_dark_success.png" alt="Upload Dark now generating quiz" width="250"/></td>
   </tr>
 </table>
 
@@ -146,13 +146,13 @@ Here are some visual highlights of the app in both light and dark modes:
 ### 🧠 Quiz Page
 <table>
   <tr>
-    <td><img src="../docs/screenshots/quiz_light_empty.png" alt="Quiz Light with no quiz data" width="250"/></td>
-    <td><img src="../docs/screenshots/quiz_light_filled_top.png" alt="Quiz Light with quiz data Top section" width="250"/></td>
-    <td><img src="../docs/screenshots/quiz_light_filled_bottom.png" alt="Quiz Light with quiz data Bottom section" width="250"/></td>
-    <td><img src="../docs/screenshots/quiz_dark_empty.png" alt="Quiz Dark with no quiz data" width="250"/></td>
-    <td><img src="../docs/screenshots/quiz_dark_filled_top.png" alt="Quiz Dark with quiz data Top section" width="250"/></td>
-    <td><img src="../docs/screenshots/quiz_dark_filled_bottom.png" alt="Quiz Dark with quiz data Bottom section" width="250"/></td>
-    <td><img src="../docs/screenshots/quiz_dark_filled_loading.png" alt="Quiz Dark with quiz data loading section" width="250"/></td>
+    <td><img src="./docs/screenshots/quiz_light_empty.png" alt="Quiz Light with no quiz data" width="250"/></td>
+    <td><img src="./docs/screenshots/quiz_light_filled_top.png" alt="Quiz Light with quiz data Top section" width="250"/></td>
+    <td><img src="./docs/screenshots/quiz_light_filled_bottom.png" alt="Quiz Light with quiz data Bottom section" width="250"/></td>
+    <td><img src="./docs/screenshots/quiz_dark_empty.png" alt="Quiz Dark with no quiz data" width="250"/></td>
+    <td><img src="./docs/screenshots/quiz_dark_filled_top.png" alt="Quiz Dark with quiz data Top section" width="250"/></td>
+    <td><img src="./docs/screenshots/quiz_dark_filled_bottom.png" alt="Quiz Dark with quiz data Bottom section" width="250"/></td>
+    <td><img src="./docs/screenshots/quiz_dark_filled_loading.png" alt="Quiz Dark with quiz data loading section" width="250"/></td>
   </tr>
 </table>
 
@@ -161,12 +161,12 @@ Here are some visual highlights of the app in both light and dark modes:
 ### 📊 Results Page
 <table>
   <tr>
-    <td><img src="../docs/screenshots/results_light_empty.png" alt="Results Light with no results data" width="250"/></td>
-    <td><img src="../docs/screenshots/results_light_filled_top.png" alt="Results Light with results data Top Section" width="250"/></td>
-    <td><img src="../docs/screenshots/results_light_filled_bottom.png" alt="Results Light with no results data Bottom Section" width="250"/></td>
-    <td><img src="../docs/screenshots/results_dark_empty.png" alt="Results Dark with no results data" width="250"/></td>
-    <td><img src="../docs/screenshots/results_dark_filled_top.png" alt="Results Dark with no results data Top Section" width="250"/></td>
-    <td><img src="../docs/screenshots/results_dark_filled_bottom.png" alt="Results Dark with no results data Bottom Section" width="250"/></td>
+    <td><img src="./docs/screenshots/results_light_empty.png" alt="Results Light with no results data" width="250"/></td>
+    <td><img src="./docs/screenshots/results_light_filled_top.png" alt="Results Light with results data Top Section" width="250"/></td>
+    <td><img src="./docs/screenshots/results_light_filled_bottom.png" alt="Results Light with no results data Bottom Section" width="250"/></td>
+    <td><img src="./docs/screenshots/results_dark_empty.png" alt="Results Dark with no results data" width="250"/></td>
+    <td><img src="./docs/screenshots/results_dark_filled_top.png" alt="Results Dark with no results data Top Section" width="250"/></td>
+    <td><img src="./docs/screenshots/results_dark_filled_bottom.png" alt="Results Dark with no results data Bottom Section" width="250"/></td>
   </tr>
 </table>
 
@@ -175,18 +175,18 @@ Here are some visual highlights of the app in both light and dark modes:
 ### 🗂️ Dashboard & History
 <table>
   <tr>
-    <td><img src="../docs/screenshots/dashboard_light_empty.png" alt="Dashboard Light with no files data" width="250"/></td>
-    <td><img src="../docs/screenshots/dashboard_light_filled.png" alt="Dashboard Light with files data" width="250"/></td>
-    <td><img src="../docs/screenshots/dashboard_light_filled_show_section.png" alt="Dashboard Light with files data showing one or more section" width="250"/></td>
-    <td><img src="../docs/screenshots/dashboard_dark_empty.png" alt="Dashboard Dark with no files data" width="250"/></td>
-    <td><img src="../docs/screenshots/dashboard_dark_filled.png" alt="Dashboard Dark with files data" width="250"/></td>
-    <td><img src="../docs/screenshots/dashboard_dark_filled_show_section.png" alt="Dashboard Dark with files data showing one or more section" width="250"/></td>
+    <td><img src="./docs/screenshots/dashboard_light_empty.png" alt="Dashboard Light with no files data" width="250"/></td>
+    <td><img src="./docs/screenshots/dashboard_light_filled.png" alt="Dashboard Light with files data" width="250"/></td>
+    <td><img src="./docs/screenshots/dashboard_light_filled_show_section.png" alt="Dashboard Light with files data showing one or more section" width="250"/></td>
+    <td><img src="./docs/screenshots/dashboard_dark_empty.png" alt="Dashboard Dark with no files data" width="250"/></td>
+    <td><img src="./docs/screenshots/dashboard_dark_filled.png" alt="Dashboard Dark with files data" width="250"/></td>
+    <td><img src="./docs/screenshots/dashboard_dark_filled_show_section.png" alt="Dashboard Dark with files data showing one or more section" width="250"/></td>
   </tr>
   <tr>
-    <td><img src="../docs/screenshots/history_light_filled.png" alt="History Light" width="250"/></td>
-    <td><img src="../docs/screenshots/history_light_filled_view_attempts.png" alt="History Light show view attempts" width="250"/></td>
-    <td><img src="../docs/screenshots/history_dark_filled.png" alt="History Dark" width="250"/></td>
-    <td><img src="../docs/screenshots/history_dark_filled_view_attempts.png" alt="History Dark show view attempts" width="250"/></td>
+    <td><img src="./docs/screenshots/history_light_filled.png" alt="History Light" width="250"/></td>
+    <td><img src="./docs/screenshots/history_light_filled_view_attempts.png" alt="History Light show view attempts" width="250"/></td>
+    <td><img src="./docs/screenshots/history_dark_filled.png" alt="History Dark" width="250"/></td>
+    <td><img src="./docs/screenshots/history_dark_filled_view_attempts.png" alt="History Dark show view attempts" width="250"/></td>
   </tr>
 </table>
 
