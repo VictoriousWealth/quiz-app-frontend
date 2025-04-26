@@ -120,10 +120,10 @@ Here are some visual highlights of the app in both light and dark modes:
 ### 🔐 Login
 <table>
   <tr>
-    <td><img src="../docs/screenshots/login_light_empty.png" alt="Login Light with no details" width="250"/></td>
-    <td><img src="../docs/screenshots/login_light_filled.png" alt="Login Light with details filled in" width="250"/></td>
-    <td><img src="../docs/screenshots/login_dark_empty.png" alt="Login Dark with no details" width="250"/></td>
-    <td><img src="../docs/screenshots/login_dark_filled.png" alt="Login Dark with details filled in" width="250"/></td>
+    <td><img src="./docs/screenshots/login_light_empty.png" alt="Login Light with no details" width="250"/></td>
+    <td><img src="./docs/screenshots/login_light_filled.png" alt="Login Light with details filled in" width="250"/></td>
+    <td><img src="./docs/screenshots/login_dark_empty.png" alt="Login Dark with no details" width="250"/></td>
+    <td><img src="./docs/screenshots/login_dark_filled.png" alt="Login Dark with details filled in" width="250"/></td>
   </tr>
 </table>
 
